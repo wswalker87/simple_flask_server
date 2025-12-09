@@ -27,6 +27,7 @@ Thumbs.db
 *.log
 *.tmp
 temp/
+test_file.py
 
 # Sensitive data / configuration
 .env
