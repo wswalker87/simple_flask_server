@@ -16,9 +16,7 @@ students = [
      {'id': '9', 'first_name': 'Ethan', 'last_name': 'Wilson', 'age': 19, 'grade': 'C'},
      {'id': '10', 'first_name': 'Isabella', 'last_name': 'Moore', 'age': 22, 'grade': 'B'}
  ]
-
-if __name__ == '__main__':
-    app.run(debug=False, port=5000) 
+ 
 
 # We define a route `/students` that responds to GET requests.
 @app.route('/')
@@ -85,3 +83,8 @@ def get_student_ages():
         student_ages.append(name_dict)
     # return student_ages
     return jsonify(student_ages)
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
